@@ -178,7 +178,7 @@ const Cart = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/razorpay/order",
+        "https://flipcart-backend-smop.onrender.com/razorpay/order",
         { amount: totalAmount },
       );
 

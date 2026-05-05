@@ -60,7 +60,7 @@ const Address = () => {
 
       // 1️⃣ Create order
       const response = await axios.post(
-        "http://localhost:8000/razorpay/order",
+        "https://flipcart-backend-smop.onrender.com/razorpay/order",
         { amount: totalAmount },
       );
 
@@ -77,7 +77,7 @@ const Address = () => {
           try {
             // 3️⃣ Verify payment
             const verifyRes = await axios.post(
-              "http://localhost:8000/razorpay/verify",
+              "https://flipcart-backend-smop.onrender.com/razorpay/verify",
               {
                 razorpay_order_id: res.razorpay_order_id,
                 razorpay_payment_id: res.razorpay_payment_id,
