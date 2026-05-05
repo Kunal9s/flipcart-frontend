@@ -15,6 +15,7 @@ const Component = styled(Box)`
 `;
 
 const Home = () => {
+  const dispatch = useDispatch();
   const productState = useSelector((state) => state.getProducts);
   const { products } = productState;
   console.log(products);
