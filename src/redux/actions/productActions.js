@@ -1,7 +1,7 @@
 import axios from 'axios';
 import * as actionTypes from '../constants/productConstant.js';
 
-const URL = 'https://flipcart-backend-smop.onrender.com/';
+const URL = 'https://flipcart-backend-smop.onrender.com';
 
 export const getProducts = () => async (dispatch) => {
     try {
